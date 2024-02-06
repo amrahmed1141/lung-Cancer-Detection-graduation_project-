@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ResultScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                app:srcCompat="@drawable/back_btn" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_marginEnd="50dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/home_logo" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:layout_height="wrap_content"
+            android:text="Detection Results" />
+
+
+        <ImageView
+            android:id="@+id/cancerImage"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_height="350dp"
+            android:layout_marginStart="44dp"
+            android:scaleType="centerCrop"
+            android:layout_marginEnd="44dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:layout_height="wrap_content"
+            android:text="Result" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/detect"
+            android:layout_width="190dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="47dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:minWidth="83dp"
+            android:minHeight="36dp"
+            android:text="New Detection"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:backgroundTint="#3C93E2"
+            app:cornerRadius="35dp"
+            app:iconGravity="textStart" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

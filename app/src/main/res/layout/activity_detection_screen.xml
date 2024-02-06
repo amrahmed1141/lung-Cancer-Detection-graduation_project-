@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".DetectionScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center|top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/home_logo" />
+
+        <ImageView
+            android:id="@+id/cancerImage"
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            android:layout_marginTop="55dp"
+            app:srcCompat="@drawable/cancer_image" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textSize="22sp"
+            android:text="Capture or Pick a CT image" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal">
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/openCamera"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:layout_weight="1"
+                android:minWidth="83dp"
+                android:minHeight="36dp"
+                android:text="Open Camera"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:backgroundTint="#3C93E2"
+                app:cornerRadius="35dp"
+                app:iconGravity="textStart" />
+
+
+            <Space
+                android:layout_width="15dp"
+                android:layout_height="1dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/openGallery"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="7dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:minWidth="83dp"
+                android:minHeight="36dp"
+                android:text="Open Gallery"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:backgroundTint="#3C93E2"
+                app:cornerRadius="35dp"
+                app:iconGravity="textStart" />
+        </LinearLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/detect"
+            android:layout_width="180dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:minWidth="83dp"
+            android:minHeight="36dp"
+            android:text="Detect"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:backgroundTint="#3C93E2"
+            app:cornerRadius="35dp"
+            app:iconGravity="textStart" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
